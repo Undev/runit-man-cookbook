@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# stderr to stdout
+exec 2>&1
+
+<% if node[:runit_man][:logger] == "svlogd" %>
+mkdir -p /var/log/runit-man
+exec svlogd /var/log/runit-man
+<% end %>
+<% if node[:runit_man][:logger] =~ /^logger\:/ %>
+# TODO
+<% end %>
+
