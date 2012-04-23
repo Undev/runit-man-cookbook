@@ -11,5 +11,5 @@ Use this cookbook to install [runit web management tool](https://github.com/Unde
 
 runit-man installation should be configured through cookbook attributes.
 
-For example, You can restrict runit-man version using node[:runit\_man][:version] attribute.
+For example, You can restrict runit-man version using `node[:runit\_man][:version]` attribute.
 
