@@ -3,6 +3,9 @@
 # stderr to stdout
 exec 2>&1
 
+# Ubuntu stores ruby in /opt/ path...
+export PATH="$PATH:/opt/ruby/bin"
+
 <% if node[:runit_man][:use_multiuser_rvm] %>
 # Use multiuser RVM
 if [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
