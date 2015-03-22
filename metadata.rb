@@ -15,6 +15,7 @@
 # limitations under the License.
 #
 
+name             "runit-man"
 maintainer       "Akzhan Abdulin"
 maintainer_email "akzhan.abdulin@gmail.com"
 license          "Apache License 2.0"
